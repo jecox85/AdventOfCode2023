@@ -19,13 +19,8 @@ private:
 	/**
 		* @brief Does the work and saves the solution in a member variable.
 	*/
-	virtual void work() = 0;
-
-	/**
-		* @brief Member variable that does the work needed for the solution.
-	*/
-		
+	virtual void work() = 0;		
 };
-}
+} // namespace solutions
 #endif //ISOLUTION_H
 

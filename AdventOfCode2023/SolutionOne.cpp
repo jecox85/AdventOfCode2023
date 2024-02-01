@@ -1,8 +1,10 @@
 #include "SolutionOne.h"
 
+#include <fstream>
+
 namespace solutions
 {
-	SolutionOne::SolutionOne() 
+	SolutionOne::SolutionOne() : m_totalSum(0)
 	{
 		work();
 	}
@@ -56,9 +58,53 @@ namespace solutions
 	 * calibration values?
 	 * 
 	*/
-	void SolutionOne::work() 
+	void SolutionOne::work()
 	{
+		std::ifstream solutionOneFile;
+		solutionOneFile.open("SolutionOne.txt");
+		std::string tempLine;
+		char firstValue;
+		char secondValue;
+		std::string fullValue = "";
 
-		m_answer = "test";
+		if (solutionOneFile.is_open())
+		{
+			//char '0' = 48
+			//char '9' = 57
+			while (getline(solutionOneFile, tempLine))
+			{
+				char firstValue = '0';
+				//get first value char
+				for (int i = 0; i < tempLine.size(); i++)
+				{
+					if (tempLine[i] >= 48 && tempLine[i] <= 57)
+					{
+						firstValue = tempLine[i];
+						break;
+					}
+				}
+				//get second value char
+				char secondValue = '0';
+				for (int i = static_cast<int>(tempLine.size()) - 1; i >= 0; i--)
+				{
+					if (tempLine[i] >= 48 && tempLine[i] <= 57)
+					{
+						secondValue = tempLine[i];
+						break;
+					}
+				}
+				//concatenate chars into fullValue string
+				fullValue = { firstValue, secondValue };
+				//convert fullValue to int and add to m_totalSum.
+				m_totalSum += stoi(fullValue);
+			}
+			m_answer = std::to_string(m_totalSum);
+		}
+		else
+		{
+
+			m_answer = "Error opening file.";
+		}
+		solutionOneFile.close();
 	}
 }// namespace solutions

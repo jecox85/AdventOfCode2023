@@ -5,10 +5,13 @@
 using namespace std;
 
 #include "SolutionOne.h"
+#include "SolutionOnePartTwo.h"
 
 int main()
 {
 	solutions::SolutionOne solutionOne;
-	cout << solutionOne.answer() << endl;
+	cout << "The answer for day 1 part 1 is : " << solutionOne.answer() << endl;
+	solutions::SolutionOnePartTwo solutionOnePartTwo;
+	cout << "The answer for day 1 part 2 is : " << solutionOnePartTwo.answer() << endl;
 	return 0;
 }

@@ -14,6 +14,7 @@ public:
 private:
 	void work() override;
 	std::string m_answer;
+	int m_totalSum;
 };
 } //namespace solutions
 
