@@ -18,5 +18,16 @@
     <ClCompile Include="AdventOfCode2023.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SolutionOne.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SolutionOne.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ISolution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
