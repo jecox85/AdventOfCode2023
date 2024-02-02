@@ -131,12 +131,14 @@
     <ClCompile Include="SolutionOne.cpp" />
     <ClCompile Include="SolutionOnePartTwo.cpp" />
     <ClCompile Include="SolutionTwo.cpp" />
+    <ClCompile Include="SolutionTwoPartTwo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ISolution.h" />
     <ClInclude Include="SolutionOne.h" />
     <ClInclude Include="SolutionOnePartTwo.h" />
     <ClInclude Include="SolutionTwo.h" />
+    <ClInclude Include="SolutionTwoPartTwo.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="SolutionOne.txt" />

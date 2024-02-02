@@ -7,6 +7,7 @@ using namespace std;
 #include "SolutionOne.h"
 #include "SolutionOnePartTwo.h"
 #include "SolutionTwo.h"
+#include "SolutionTwoPartTwo.h"
 
 int main()
 {
@@ -16,5 +17,7 @@ int main()
 	cout << "The answer for day 1 part 2 is : " << solutionOnePartTwo.answer() << endl;
 	solutions::SolutionTwo solutionTwo;
 	cout << "The answer for day 2 part 1 is : " << solutionTwo.answer() << endl;
+	solutions::SolutionTwoPartTwo solutionTwoPartTwo;
+	cout << "The answer for day 2 part 2 is : " << solutionTwoPartTwo.answer() << endl;
 	return 0;
 }
